@@ -14,4 +14,4 @@ async def start(client, message):
 - **Library :** [Pyrogram v1.2.0](https://pyrogram.org)
 - **Server :** [Heroku](https://heroku.com)
 """
-await message.reply_text(helptxt)
+await message.reply_text(about)
