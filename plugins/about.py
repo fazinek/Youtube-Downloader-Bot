@@ -5,5 +5,4 @@ from pyrogram import Client, Filters, StopPropagation, InlineKeyboardButton, Inl
 async def start(client, message):
 
     about = "• **Bot :** YouTube DL \n\n• **Channel :** @EKBOTZ_UPDATE \n\n• **Language :** Python 3 \n\n• **Framework :** Pyrogram"
-
-await message.reply_text(about)
+    await message.reply_text(about)
