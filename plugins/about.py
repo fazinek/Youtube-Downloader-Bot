@@ -1,3 +1,8 @@
+from pyrogram import Client, Filters, StopPropagation, InlineKeyboardButton, InlineKeyboardMarkup
+
+
+@Client.on_message(Filters.command(["about"]))
+async def start(client, message):
 - **Bot :** `Rename Bot`
 - **Creator :** [Fayas](https://telegram.me/TheFayas)
 - **Channel :** [Fayas Noushad](https://telegram.me/FayasNoushad)
