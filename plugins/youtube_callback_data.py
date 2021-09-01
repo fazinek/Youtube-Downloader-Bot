@@ -112,10 +112,10 @@ async def catch_youtube_dldata(c, q):
 
     if cb_data.startswith("video"):
         filename = await downloadvideocli(video_command)
-        #dur = round(duration(filename))
+        dur = round(duration(filename))
         med = InputMediaVideo(
             media=filename,
-            #duration=dur,
+            duration=dur,
             width=width,
             height=height,
             thumb=thumb_image_path,
@@ -133,7 +133,7 @@ async def catch_youtube_dldata(c, q):
 
     if cb_data.startswith("docvideo"):
         filename = await downloadvideocli(video_command)
-        #dur = round(duration(filename))
+        dur = round(duration(filename))
         med = InputMediaDocument(
             media=filename,
             thumb=thumb_image_path,
